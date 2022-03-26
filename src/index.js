@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Items from './Routes/Items';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+  <Routes>
+    <Route path="/" element={<App/>}/>
+    <Route path="items" element={<Items />} />
+    </Routes>
   </BrowserRouter>,
   document.getElementById('root')
 );

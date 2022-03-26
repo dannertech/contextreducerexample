@@ -1,6 +1,13 @@
 import React, {useReducer} from 'react';
 
-const reducer = (state, action) => {
+export const initialState = [
+    "collard greens",
+    "bananas",
+    "chicken",
+    "wine"
+];
+
+export const reducer = (state, action) => {
     switch(action.type){
         case "ADD_TO_CART":
             return [...state.items, action.payload]
@@ -12,4 +19,4 @@ const reducer = (state, action) => {
     }
 };
 
-export default reducer;
+
