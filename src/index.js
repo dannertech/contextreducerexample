@@ -7,12 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Items from './Routes/Items';
 
 ReactDOM.render(
-  <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<App/>}/>
-    <Route path="items" element={<Items />} />
-    </Routes>
-  </BrowserRouter>,
+  <App />,
   document.getElementById('root')
 );
 
